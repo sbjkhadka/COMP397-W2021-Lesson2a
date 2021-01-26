@@ -153,9 +153,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8ff2c4f608dfb43a83572114755635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementForce: 0
-  jumpForce: 0
-  rigidBody: {fileID: 0}
+  controller: {fileID: 0}
+  maxSpeed: 10
+  gravity: -30
+  jumpHeight: 3
+  groundCheck: {fileID: 1204225494}
+  groundRadius: 0.5
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
+  velocity: {x: 0, y: 0, z: 0}
   isGrounded: 0
 --- !u!143 &500663856
 CharacterController:
